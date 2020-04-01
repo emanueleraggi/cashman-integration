@@ -1,0 +1,81 @@
+html,
+body,
+.flex-vertical {
+	height: 100%;
+	margin: 0;
+}
+.flex-vertical {
+	display: flex;
+	flex-flow: column;
+}
+.ship-tracker {
+	display: flex;
+	flex-flow: column;
+	flex: 1;
+	overflow: hidden;
+}
+tbody {
+	overflow-y: scroll;
+}
+
+.infowindow {
+	width: 290px;
+	height: 210px;
+	background-color: white;
+	border-radius: 40px;
+	border: 2px solid black;
+	padding: 7px 17px;
+	position: absolute;
+	bottom: 20px;
+	margin-left: -80px;
+}
+
+.infowindow::after {
+	width: 32px;
+	height: 32px;
+	background-color: white;
+	transform: rotate(-45deg);
+	content: "";
+	position: absolute;
+	bottom: -17px;
+	left: 95px;
+	border-left: 2px solid black;
+	border-bottom: 2px solid black;
+
+}
+
+.infowindow-header {
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.infowindow-img{
+	padding: 5px 0 15px 15px;
+}
+
+.infowindow-footer {
+	width: 100%;
+}
+.infowindow-p {
+	font-weight: bold;
+	font-size: 9px;
+	line-height: 0.3px;
+	float: left;
+	width: 40%;
+}
+
+.infowindow-select {
+	float: left;
+	width: 30%;
+	border: 2px solid black;
+}
+
+.infowindow-button {
+	float: right;
+	width: 28%;
+	height: 19px;
+	border: 2px solid black;
+	color: black;
+	text-align: center;
+
+}

@@ -1,0 +1,280 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--primaryGreen: #0b6623;
+	--mainWhite: #fff;
+	--offWhite: #f7f7f7;
+	/* --mainBlack: #222; */
+	--mainGrey: #ececec;
+	--darkGrey: #cfcfcf;
+	--shadowGreen: #9dc183;
+	--mainTransition: all 0.3s linear;
+	--mainSpacing: 3px;
+	--lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+	--darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* body {
+	height: 100%;
+	margin: 0;
+	border: 0;
+	background: #212121;
+}
+
+.resizable-content {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.resizable-row {
+	display: block;
+	width: 100%;
+}
+
+.resizable-column {
+	display: table-cell;
+	height: 100%;
+} */
+
+/* .resizable-column:first {
+	border-right: 2px solid black;
+}
+.col-1-10 {
+	width: 10%;
+}
+.col-2-10 {
+	width: 20%;
+}
+.col-3-10 {
+	width: 30%;
+}
+.col-4-10 {
+	width: 40%;
+}
+.col-5-10 {
+	width: 50%;
+}
+.col-6-10 {
+	width: 60%;
+}
+.col-7-10 {
+	width: 70%;
+}
+.col-8-10 {
+	width: 80%;
+}
+.col-9-10 {
+	width: 90%;
+}
+.col-10-10 {
+	width: 100%;
+}
+.row-1-10 {
+	height: 10%;
+}
+.row-2-10 {
+	height: 20%;
+}
+.row-3-10 {
+	height: 30%;
+}
+.row-4-10 {
+	height: 40%;
+}
+.row-5-10 {
+	height: 50%;
+}
+.row-6-10 {
+	height: 60%;
+}
+.row-7-10 {
+	height: 70%;
+}
+.row-8-10 {
+	height: 80%;
+}
+.row-9-10 {
+	height: 90%;
+}
+.row-10-10 {
+	height: 100%;
+} */
+
+/* BUTTONS */
+/* UPLOAD BUTTON */
+.btn-upload {
+	display: inline-block;
+	text-decoration: none;
+	letter-spacing: var(--mainSpacing);
+	color: var(--mainBlack);
+	background: var(--shadowGreen);
+	padding: 0.4rem 0.9rem;
+	border: 3px solid var(--shadowGreen);
+	transition: var(--mainTransition);
+	text-transform: uppercase;
+	cursor: pointer;
+}
+/* DOWNLOAD BUTTON */
+.btn-download {
+	display: inline-block;
+	text-decoration: none;
+	letter-spacing: var(--mainSpacing);
+	color: var(--mainBlack);
+	background: var(--shadowGreen);
+	padding: 0.4rem 0.9rem;
+	border: 3px solid var(--shadowGreen);
+	transition: var(--mainTransition);
+	text-transform: uppercase;
+	cursor: pointer;
+}
+/* LOCATE BUTTON */
+.btn-locator {
+	display: inline-block;
+	text-decoration: none;
+	letter-spacing: var(--mainSpacing);
+	color: var(--mainBlack);
+	background: var(--shadowGreen);
+	padding: 0.4rem 0.9rem;
+	border: 3px solid var(--shadowGreen);
+	transition: var(--mainTransition);
+	text-transform: uppercase;
+	cursor: pointer;
+}
+/* REQUEST API BUTTON */
+.btn-next-request {
+	position: fixed;
+	color: var(--mainBlack);
+	background: var(--offWhite);
+	padding: 0.4rem 0.9rem;
+	cursor: default;
+	margin: -5.5vh 30vw auto -36vh;
+	border: 3px solid var(--shadowGreen);
+	color: var(--primaryGreen);
+	font-weight: bold;
+	height: 34px;
+	font-size: 16px;
+	padding: 0.1rem 0.9rem;
+}
+
+/* COMBOBOXES */
+/* COMPNAY COMBOBOX */
+.combo-companies {
+	position: fixed;
+	height: 34px;
+	font-size: 16px;
+	border-radius: 3px;
+	left: 15px;
+	top: 15px;
+	margin-right: 500px;
+	width: 200px;
+	margin: -40vh 50vw auto -50vh;
+	background: var(--offWhite);
+	padding: 0.1rem 0.9rem;
+	border: 3px solid var(--shadowGreen);
+	color: var(--primaryGreen);
+	font-weight: bold;
+}
+.mydropdown {
+	height: 34px;
+	font-size: 16px;
+	border-radius: 3px;
+	width: 200px;
+	background: var(--offWhite);
+	border: 3px solid var(--shadowGreen);
+	color: var(--primaryGreen);
+	font-weight: bold;
+}
+
+/* EQUIPMENT COMBOBOX */
+.combo-equipment {
+	position: fixed;
+	height: 34px;
+	width: 12%;
+	height: 34px;
+	font-size: 16px;
+	border: 1px solid #111;
+	border-radius: 3px;
+	left: 15px;
+	top: 15px;
+	margin: -40vh 50vw auto -32vh;
+	background: var(--offWhite);
+	padding: 0.1rem 0.9rem;
+	border: 3px solid var(--shadowGreen);
+	color: var(--primaryGreen);
+	font-weight: bold;
+}
+/* TRACKED FEATURE COMBOBOX */
+.combo-vessels {
+	position: fixed;
+	height: 34px;
+	width: 13%;
+	height: 34px;
+	font-size: 16px;
+	border: 1px solid #111;
+	border-radius: 3px;
+	left: 15px;
+	top: 15px;
+	margin: -40vh 50vw auto -16vh;
+	background: var(--offWhite);
+	padding: 0.1rem 0.9rem;
+	border: 3px solid var(--shadowGreen);
+	color: var(--primaryGreen);
+	font-weight: bold;
+}
+/* PREVIOUS DATA COMBOBOX */
+.combo-data-period {
+	position: fixed;
+	height: 34px;
+	width: 12%;
+	height: 34px;
+	font-size: 16px;
+	border: 1px solid #111;
+	border-radius: 3px;
+	left: 15px;
+	top: 15px;
+	margin: -40vh 50vw auto 1vh;
+	background: var(--offWhite);
+	padding: 0.1rem 0.9rem;
+	border: 3px solid var(--shadowGreen);
+	color: var(--primaryGreen);
+	font-weight: bold;
+}
+
+.multiselect {
+	width: 200px;
+}
+
+.selectBox {
+	position: relative;
+}
+
+.selectBox select {
+	width: 100%;
+	font-weight: bold;
+}
+
+.overSelect {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+#checkboxes {
+	display: none;
+	border: 1px #dadada solid;
+	background-color: rgba(240, 248, 255, 0.774);
+}
+
+#checkboxes label {
+	display: block;
+}
+
+#checkboxes label:hover {
+	background-color: #1e90ff;
+}

@@ -1,0 +1,58 @@
+{
+	"name": "cashman-tracker",
+	"version": "0.1.0",
+	"private": true,
+	"proxy": "http://localhost:3000",
+	"dependencies": {
+		"@testing-library/jest-dom": "^4.2.4",
+		"@testing-library/react": "^9.3.2",
+		"@testing-library/user-event": "^7.1.2",
+		"axios": "^0.19.2",
+		"chart.js": "^2.9.3",
+		"chartjs-chart-geo": "^1.1.4",
+		"contentful": "^7.13.1",
+		"corsproxy": "^1.5.0",
+		"express": "^4.17.1",
+		"express-generator": "^4.16.1",
+		"google-map-react": "^1.1.5",
+		"json2csv": "^5.0.0",
+		"mongoose": "^5.8.11",
+		"react": "^16.12.0",
+		"react-chartjs-2": "^2.9.0",
+		"react-csv": "^2.0.1",
+		"react-dates": "^21.8.0",
+		"react-dom": "^16.12.0",
+		"react-google-maps": "^9.4.5",
+		"react-icons": "^3.8.0",
+		"react-multiselect-checkboxes": "^0.1.1",
+		"react-router-dom": "^5.1.2",
+		"react-scripts": "^3.4.0",
+		"react-select": "^3.0.8",
+		"reactstrap": "^8.4.0",
+		"styled-components": "^5.0.0"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"standard": "^14.3.1"
+	}
+}
