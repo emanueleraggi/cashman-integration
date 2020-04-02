@@ -1,34 +1,34 @@
 {
-  "name": "cashman-integration",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "concurrently \"cd server && PORT=3001 node app.js\" \"cd client && yarn start\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://boren_zheng@bitbucket.org/boren_zheng/cashman-integration.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "homepage": "https://bitbucket.org/boren_zheng/cashman-integration#readme",
-  "dependencies": {
-    "axios": "^0.19.2",
-    "concurrently": "^5.1.0",
-    "contentful": "^7.14.0",
-    "cookie-parser": "^1.4.5",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "google-map-react": "^1.1.7",
-    "http-errors": "^1.7.3",
-    "json2csv": "^5.0.0",
-    "mongoose": "^5.9.7",
-    "morgan": "^1.10.0",
-    "node-cache": "^5.1.0",
-    "react-csv": "^2.0.3",
-    "react-scripts": "^3.4.1"
-  }
+	"name": "cashman-integration",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "concurrently \"cd server && PORT=3001 node app.js\" \"cd client && npm start\"",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/emanueleraggi/cashman-integration.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"homepage": "https://github.com/emanueleraggi/cashman-integration.git#readme",
+	"dependencies": {
+		"axios": "^0.19.2",
+		"concurrently": "^5.1.0",
+		"contentful": "^7.14.0",
+		"cookie-parser": "^1.4.5",
+		"cors": "^2.8.5",
+		"express": "^4.17.1",
+		"google-map-react": "^1.1.7",
+		"http-errors": "^1.7.3",
+		"json2csv": "^5.0.0",
+		"mongoose": "^5.9.7",
+		"morgan": "^1.10.0",
+		"node-cache": "^5.1.0",
+		"react-csv": "^2.0.3",
+		"react-scripts": "^3.4.1"
+	}
 }
