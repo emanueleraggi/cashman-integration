@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"start": "concurrently \"cd server && PORT=3001 node app.js\" \"cd client && npm start\"",
+		"start": "concurrently \"cd server && npm start\" \"cd client && npm start\"",
 		"build": "npm run build",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
