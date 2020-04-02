@@ -347,47 +347,47 @@ const shipNamesOfInterest = [
 
 router.get('/hello', async function(req, res, next) {
 	//
-	// const allData = myCache.get('allData');
+	const allData = myCache.get('allData');
 
-	// if (!allData) {
-	// 	hitCount++;
-	// 	console.log(`hit ${hitCount} number of times`);
+	if (!allData) {
+		hitCount++;
+		console.log(`hit ${hitCount} number of times`);
 
-	try {
-		const { data } = await axios.get(
-			// 'http://data.aishub.net/ws.php?username=AH_3076_929F7762&format=1&output=json&compress=0&latmin=11.42&latmax=58.20&lonmin=-134.09&lonmax=-52.62'
-			// 'http://data.aishub.net/ws.php?username=AH_3076_929F7762&format=1&output=json&compress=0&mmsi=366971000'
-			// 'http://data.aishub.net/ws.php?username=AH_3076_929F7762&format=1&output=json&compress=0'
-			'https://api.vesselfinder.com/vesselslist?userkey=WS-49271A06-D7E069'
-		);
-		// console.log(data);
-		const [ metaData, ships ] = data;
-		// 	const shipsOfInterest = ships.filter(
-		// 		(ship) => mmsiOfInterest.includes(ship.MMSI) && shipNamesOfInterest.includes(ship.NAME)
-		// 	);
-		// 	const filterdShips = shipsOfInterest.reduce((array, value) => {
-		// 		const isValueAlreadyInArray = !!array.find((something) => something.MMSI === value.MMSI);
-		// 		if (isValueAlreadyInArray) {
-		// 			return array;
-		// 		} else {
-		// 			array.push(value);
-		// 			return array;
-		// 		}
-		// 	}, []);
-		// myCache.set('allData', data, 70);
-		console.log(data + 'This is the data');
-		res.send(data);
-	} catch (error) {
-		res.send(error);
-		console.log(error);
+		try {
+			const { data } = await axios.get(
+				// 'http://data.aishub.net/ws.php?username=AH_3076_929F7762&format=1&output=json&compress=0&latmin=11.42&latmax=58.20&lonmin=-134.09&lonmax=-52.62'
+				// 'http://data.aishub.net/ws.php?username=AH_3076_929F7762&format=1&output=json&compress=0&mmsi=366971000'
+				// 'http://data.aishub.net/ws.php?username=AH_3076_929F7762&format=1&output=json&compress=0'
+				'https://api.vesselfinder.com/vesselslist?userkey=WS-49271A06-D7E069'
+			);
+			// console.log(data);
+			const [ metaData, ships ] = data;
+			// 	const shipsOfInterest = ships.filter(
+			// 		(ship) => mmsiOfInterest.includes(ship.MMSI) && shipNamesOfInterest.includes(ship.NAME)
+			// 	);
+			// 	const filterdShips = shipsOfInterest.reduce((array, value) => {
+			// 		const isValueAlreadyInArray = !!array.find((something) => something.MMSI === value.MMSI);
+			// 		if (isValueAlreadyInArray) {
+			// 			return array;
+			// 		} else {
+			// 			array.push(value);
+			// 			return array;
+			// 		}
+			// 	}, []);
+			myCache.set('allData', data, 70);
+			console.log(data + 'This is the data');
+			res.send(data);
+		} catch (error) {
+			res.send(error);
+			console.log(error);
+		}
+
+		// return;
 	}
 
-	// return;
-	// }
-
-	// console.log('this is the data:', allData);
+	console.log('this is the data:', allData);
 	// console.log(data);
-	// res.send(data);
+	res.send(allData);
 	// return;
 });
 
