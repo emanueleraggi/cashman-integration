@@ -4,17 +4,17 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"start": "concurrently \"cd server && PORT=3001 node app.js\" \"cd client && npm start\"",
+		"start": "concurrently \"cd server && PORT=3001 node app.js\" \"cd client && yarn start\"",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/emanueleraggi/cashman-integration.git"
+		"url": "git+https://boren_zheng@bitbucket.org/boren_zheng/cashman-integration.git"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
-	"homepage": "https://github.com/emanueleraggi/cashman-integration.git#readme",
+	"homepage": "https://bitbucket.org/boren_zheng/cashman-integration#readme",
 	"dependencies": {
 		"axios": "^0.19.2",
 		"concurrently": "^5.1.0",
